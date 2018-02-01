@@ -1,8 +1,5 @@
 <?php
 	require('connect.php');
-	$query = "SELECT * FROM posts";
-	$statement = $db->prepare($query); // Returns a PDOStatement object.
-	$statement->execute(); // The query is now executed.
 ?>
 <!DOCTYPE html>
 <html>

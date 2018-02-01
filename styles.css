@@ -9,6 +9,7 @@ nav ul li 	{ display: inline; padding: 0px 10px; }
 nav ul li a	{ text-decoration: none; line-height: 28px; padding: 0px 10px; display: inline-block; }
 #errorMessage { color: red; text-align: center; }
 #blogs 		{ width: 800px; margin: auto; }
+#blogs h3	{ display: inline; padding-right: 7px; }
 #blogs h3,
 #blogs p	{ margin: 5px 0; }
 #blogs p 	{ margin-left: 4px; }

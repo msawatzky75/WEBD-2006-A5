@@ -5,7 +5,7 @@ if ($_POST)
 	if (strlen($_POST['post']) > 0 && strlen($_POST['post']) < 10001)
 	{
 		require('connect.php');
-		$query = "INSERT INTO posts (postdate, title, post) VALUES (:currentDate, :title, :post);";
+		$query = "UPDATE posts SET postdate = :currentDate, title = :title, post = :post;";
 		$statement = $db->prepare($query);
 		$statement->bindValue(':currentDate', date("F j, Y"));
 		$statement->bindValue(':title', $_POST['title']);
@@ -15,5 +15,5 @@ if ($_POST)
 		die();
 	}
 }
-header('Location: index.php?error=insert');
+header('Location: index.php?error=update');
 ?>
