@@ -1,4 +1,5 @@
 <?php
+require 'authenticate.php';
 if(isset($_GET['id'])):
 	require('connect.php');
 	$query = "SELECT * FROM posts WHERE id = :id";

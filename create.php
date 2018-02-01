@@ -1,5 +1,6 @@
 <?php
-	require('connect.php');
+	require 'authenticate.php';
+	require 'connect.php';
 ?>
 <!DOCTYPE html>
 <html>

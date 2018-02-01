@@ -1,6 +1,6 @@
 <?php
-define('ADMIN_LOGIN','wally');
-define('ADMIN_PASSWORD','mypass');
+define('ADMIN_LOGIN','Spiffpitt');
+define('ADMIN_PASSWORD','password');
 
 if (!isset($_SERVER['PHP_AUTH_USER']) || !isset($_SERVER['PHP_AUTH_PW']) || ($_SERVER['PHP_AUTH_USER'] != ADMIN_LOGIN) || ($_SERVER['PHP_AUTH_PW'] != ADMIN_PASSWORD))
 {
