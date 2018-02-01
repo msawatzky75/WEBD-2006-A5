@@ -1,3 +1,4 @@
+<?php require 'connect.php'; ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -5,6 +6,7 @@
 		<title>My Blog</title>
 	</head>
 	<body>
-		<?= include('header.php?home') ?>
+		<?=require 'header.php'?>
+
 	</body>
 </html>
