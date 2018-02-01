@@ -4,7 +4,8 @@
 			<section class="post" id='post<?=$statement->rowCount()+1?>'>
 				<h3 class='title'><?=$row['title']?></h3>
 				<small class='date'><?=$row['postdate']?></small>
-				<p><?=substr($row['post'], 0, 200)?></p>
+				<p><?=substr($row['post'], 0, 197)?>... <a href="post.php?id=<?=$row['id']?>">Read more...</a></p>
+				<hr>
 			</section>
 		<?php endwhile; ?>
 	<?php endif; ?>
