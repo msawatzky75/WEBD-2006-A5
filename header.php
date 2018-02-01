@@ -3,6 +3,6 @@
 	<h1>My Amazing Blog</h1>
 	<nav>
 		<a href="index.php">Home</a>
-		<a href="new.php">New Blog</a>
+		<a href="create.php">New Blog</a>
 	</nav>
 </header>

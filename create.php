@@ -14,10 +14,13 @@
 	<body>
 		<section id="container">
 			<?php require 'header.php'; ?>
-			<?php if (isset($_GET)) : ?>
-				<h4 id="errorMessage">There was an error creating the post.</h4>
-			<?php endif; ?>
-			<?php require 'blogs.php'; ?>
+			<form action="insert.php" method="post">
+				<div id="postinput">
+					<input type="text" name="title" value="" placeholder="Title" />
+					<textarea name="post" rows="8" cols="75" placeholder="Your post here."></textarea>
+				</div>
+				<input type="submit" name="submit" value="Post" />
+			</form>
 		</section>
 	</body>
 </html>
