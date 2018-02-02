@@ -29,3 +29,5 @@ input[type='submit']
 	border: solid darkgray 2px;
 	background: #eee;
 }
+.centerText { text-align: center;}
+.border		{ border: 2px black solid; }

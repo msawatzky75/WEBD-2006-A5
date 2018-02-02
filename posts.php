@@ -14,5 +14,10 @@
 				<hr>
 			</section>
 		<?php endwhile; ?>
+	<?php else : ?>
+		<section class="centerText border">
+			<h3>No Posts</h3><br>
+			<a href="create.php">Create One</a>
+		</section>
 	<?php endif; ?>
 </section>
