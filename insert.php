@@ -2,7 +2,7 @@
 if ($_POST)
 {
 	print_r($_POST);
-	if (strlen($_POST['post']) > 0 && strlen($_POST['post']) < 10001)
+	if ((strlen($_POST['post']) > 0 && strlen($_POST['post']) < 10001) || (strlen($_POST['title']) > 0 && strlen($_POST['title']) < 101))
 	{
 		require('connect.php');
 		$query = "INSERT INTO posts (postdate, title, post) VALUES (:currentDate, :title, :post);";
