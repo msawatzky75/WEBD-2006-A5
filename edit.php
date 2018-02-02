@@ -20,7 +20,7 @@ if(isset($_GET['id'])):
 			<?php require 'header.php'; ?>
 			<form id='input' action="update.php" method="post">
 					<input type="hidden" name="id" value="<?=$row['id']?>" />
-					<div class="">
+					<div>
 						<label for="title">Title</label>
 						<input type="text" name="title" value="<?=$row['title']?>" />
 					</div>

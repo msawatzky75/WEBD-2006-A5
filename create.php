@@ -12,12 +12,18 @@
 	<body>
 		<section id="container">
 			<?php require 'header.php'; ?>
-			<form action="insert.php" method="post">
-				<div id="postinput">
-					<input type="text" name="title" value="" placeholder="Title" />
-					<textarea name="post" rows="8" cols="75" placeholder="Your post here."></textarea>
-				</div>
-				<input type="submit" name="submit" value="Post" />
+			<form id='input' action="insert.php" method="post">
+					<div>
+						<label for="title">Title</label>
+						<input type="text" name="title" value="" />
+					</div>
+					<div>
+						<label for="post">Content</label>
+						<textarea name="post" rows="8" cols="75"></textarea>
+					</div>
+					<div id="submits">
+						<input id='post' type="submit" name="submit" value="Post" />
+					</div>
 			</form>
 		</section>
 	</body>
