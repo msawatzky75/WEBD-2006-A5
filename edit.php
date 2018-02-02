@@ -18,13 +18,20 @@ if(isset($_GET['id'])):
 	<body>
 		<section id="container">
 			<?php require 'header.php'; ?>
-			<form action="update.php" method="post">
-				<div id="postinput">
+			<form id='input' action="update.php" method="post">
 					<input type="hidden" name="id" value="<?=$row['id']?>" />
-					<input type="text" name="title" value="<?=$row['title']?>" />
-					<textarea name="post" rows="8" cols="75"><?=$row['post']?></textarea>
-				</div>
-				<input type="submit" name="submit" value="Post" />
+					<div class="">
+						<label for="title">Title</label>
+						<input type="text" name="title" value="<?=$row['title']?>" />
+					</div>
+					<div>
+						<label for="post">Content</label>
+						<textarea name="post" rows="8" cols="75"><?=$row['post']?></textarea>
+					</div>
+					<div id="submits">
+						<input id='post' type="submit" name="submit" value="Post" />
+						<input id='delete' type="submit" name="delete" value="Delete" formaction="delete.php" />
+					</div>
 			</form>
 		</section>
 	</body>

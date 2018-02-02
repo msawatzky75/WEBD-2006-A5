@@ -23,7 +23,7 @@
 					<h4 id="errorMessage">Other error.</h4>
 				<?php endif; ?>
 			<?php endif; ?>
-			<?php require 'blogs.php'; ?>
+			<?php require 'posts.php'; ?>
 		</section>
 	</body>
 </html>

@@ -4,7 +4,6 @@
 			<section class="post" id='post<?=$statement->rowCount()+1?>'>
 				<h3 class='title'><?=$row['title']?></h3>
 				<a href="edit.php?id=<?=$row['id']?>"><small>edit</small></a>
-				<a href="confirmDelete.php?id=<?=$row['id']?>"><small>delete</small></a>
 				<br>
 				<small class='date'><?=$row['postdate']?></small>
 				<?php if (strlen($row['post']) > 197) : ?>

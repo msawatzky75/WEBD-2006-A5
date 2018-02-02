@@ -16,17 +16,15 @@ nav ul li a	{ text-decoration: none; line-height: 28px; padding: 0px 10px; displ
 #blogs hr	{ width: 85%; }
 
 /* this is complete trash, but it works */
-form *						{ margin: auto; }
-form div					{ position: relative; width: 800px; height: 130px; }
-form input[type='text']		{ display: inline; position: absolute; top: 0; width: 220px; }
-form textarea 				{ display: inline; position: absolute; top: 0; right: 0; }
-form input[type='submit']
+form label			{ display: block; text-align: center; }
+input[type='text']	{ display: block; margin: auto; }
+textarea 			{ display: block; margin: auto; }
+#submits			{ display: flex; justify-content: space-between; width: 550px; margin: auto; }
+input[type='submit']
 {
-	display: block;
-	margin: 0;
-	margin-left: 750px;
+	display: inline;
 	width: 100px;
 	height: 50px;
-	border: solid blue 2px;
+	border: solid darkgray 2px;
 	background: #eee;
 }
