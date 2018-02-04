@@ -1,8 +1,8 @@
 <section id="blogs">
 	<?php if ($statement->rowCount() > 0) : ?>
-		<?php while ($row = $statement->fetch()) : ?>
+		<?php for ($i = 0; $i < 5 && $row = $statement->fetch(); $i++) : ?>
 			<section class="post" id='post<?=$statement->rowCount()+1?>'>
-				<h3 class='title'><?=$row['title']?></h3>
+				<h3 class='title'><a href="post.php?id=<?=$row['id']?>"><?=$row['title']?></a></h3>
 				<a href="edit.php?id=<?=$row['id']?>"><small>edit</small></a>
 				<br>
 				<small class='date'><?=$row['postdate']?></small>
@@ -13,7 +13,7 @@
 				<?php endif; ?>
 				<hr>
 			</section>
-		<?php endwhile; ?>
+		<?php endfor; ?>
 	<?php else : ?>
 		<section class="centerText border">
 			<h3>No Posts</h3><br>
