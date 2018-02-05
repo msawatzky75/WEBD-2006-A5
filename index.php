@@ -14,6 +14,7 @@
 	<body>
 		<section id="container">
 			<?php require 'header.php'; ?>
+
 			<?php if (isset($_GET['error'])) : ?>
 				<?php if ($_GET['error'] == 'insert') : ?>
 					<h4 id="errorMessage">There was an error creating the post.</h4>
@@ -23,6 +24,7 @@
 					<h4 id="errorMessage">Other error.</h4>
 				<?php endif; ?>
 			<?php endif; ?>
+
 			<?php require 'posts.php'; ?>
 		</section>
 	</body>
