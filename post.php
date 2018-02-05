@@ -21,7 +21,7 @@ if(isset($_GET['id'])) :
 			<section id="container">
 				<?php require 'header.php'; ?>
 				<section class="post" id='post<?=$statement->rowCount()+1?>'>
-					<h3 class='title'><?=$row['title']?></h3>
+					<h3 class='title'><?=$row['title']?> <a href="edit.php?id=<?=$row['id']?>"><small>edit</small></a></h3>
 					<small class='date'><?=$row['postdate']?></small>
 					<p><?=$row['post']?></p>
 				</section>
