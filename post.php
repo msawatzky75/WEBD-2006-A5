@@ -1,9 +1,11 @@
 <?php
 if(isset($_GET['id'])) :
+	$id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+    $id = filter_var($id, FILTER_VALIDATE_INT);
 	require('connect.php');
 	$query = "SELECT * FROM posts WHERE id = :id";
 	$statement = $db->prepare($query); // Returns a PDOStatement object.
-	$statement->bindValue("id", $_GET['id']);
+	$statement->bindValue("id", $id);
 	$statement->execute(); // The query is now executed.
 	 if ($statement->rowCount() > 0) :
 		$row = $statement->fetch();

@@ -9,8 +9,8 @@ if ($_POST)
 		$statement = $db->prepare($query);
 		$statement->bindValue(':id', $_POST['id']);
 		$statement->bindValue(':currentDate', date("F j, Y"));
-		$statement->bindValue(':title', $_POST['title']);
-		$statement->bindValue(':post', $_POST['post']);
+		$statement->bindValue(':title', filter_input(INPUT_POST, "title", FILTER_SANITIZE_FULL_SPECIAL_CHARS));
+		$statement->bindValue(':post', filter_input(INPUT_POST, "post", FILTER_SANITIZE_FULL_SPECIAL_CHARS));
 		$statement->execute();
 		header('Location: index.php'); //status 302
 		die();
