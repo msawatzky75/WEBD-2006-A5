@@ -1,7 +1,7 @@
 <section id="blogs">
 	<?php if ($statement->rowCount() > 0) : ?>
 		<?php for ($i = 0; $i < 5 && $row = $statement->fetch(); $i++) : ?>
-			<section class="post" id='post<?=$statement->rowCount()+1?>'>
+			<section class="post">
 				<h3 class='title'><a href="post.php?id=<?=$row['id']?>"><?=$row['title']?></a></h3>
 				<a href="edit.php?id=<?=$row['id']?>"><small>edit</small></a>
 				<br>
