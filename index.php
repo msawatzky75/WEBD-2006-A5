@@ -1,6 +1,6 @@
 <?php
 	require('connect.php');
-	$query = "SELECT * FROM posts";
+	$query = "SELECT * FROM posts ORDER BY id DESC";
 	$statement = $db->prepare($query); // Returns a PDOStatement object.
 	$statement->execute(); // The query is now executed.
 ?>
